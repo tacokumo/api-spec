@@ -8,8 +8,14 @@ info:
     email: drumato@pepabo.com
 
 servers:
-  - url: http://admin.example.com/
+  - url: http://admin.tacokumo.pepalab.com
     description: Optional server description, e.g. Main (production) server
+
+tags:
+  - name: Health
+    description: Health check endpoints for monitoring service status
+  - name: Projects
+    description: Project management operations
 
 paths:
   /v1alpha1/health/liveness:
