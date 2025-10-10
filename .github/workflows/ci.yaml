@@ -1,5 +1,9 @@
 name: Run Spectral on Pull Requests
 
+permissions:
+  contents: read
+  checks: write        # ← Check Runs へ書き込む
+
 on:
   pull_request:
     branches: [ main ]
