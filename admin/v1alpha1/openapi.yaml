@@ -667,6 +667,7 @@ components:
         - id
         - name
         - description
+        - kind
         - createdAt
         - updatedAt
       properties:
@@ -676,6 +677,11 @@ components:
           type: string
         description:
           type: string
+        kind:
+          type: string
+          enum:
+            - personal
+            - shared
         createdAt:
           type: string
           format: date-time
